@@ -13,6 +13,7 @@ html, body{
     
 }
 .container{
+    background-image: url(./multimedia/audio/imagenes/backin.jpg);
     display: flex;
     justify-content: space-between;
 }
@@ -54,6 +55,7 @@ element.style {
 }
 
 .principal-paragraph{
+    text-align: center;
     margin: 50px;
     display: flex;
     justify-content:center;
@@ -123,10 +125,31 @@ display: flex;
     
     width: 500px;
 }
+.medium{
+    display: grid;
+ 
+
+}
+.medium-container{
+    display: grid ; 
+    grid-template-columns:repeat(3, 1fr) ;
+}
+
+.first, .second, .third{
+    border: 10px;
+    margin: 30px;
+    height: 400px;
+    width: 500px;
+}
+.medium-title{
+    margin: 100px;
+    background-image: url(./multimedia/audio/imagenes/mid.png);
+}
 .mid{
-    color: white;
     display: flex;
     justify-content: center;
+    color: black;
+    border: 2px solid white
 }
 /* seccion albumes recomendados */
 .playlist{
@@ -143,7 +166,9 @@ display: flex;
     width: 90%;
 }
 
-.covers{
+.covers{ 
+    display: flex;
+    justify-content: space-between;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -380,4 +405,11 @@ background-color: black;
 .lists-up:hover .Comunidad {
 
 transform: translateX(200px);
+}
+.animation-img{
+    transition-property: all;
+    transition-duration: 1s; 
+}
+.animation-img:hover{
+    transform: scale(2);
 }
