@@ -1,0 +1,383 @@
+*
+/* pagina principal */
+html, body{
+    size: 100%;
+}
+
+.item-upside{
+    padding: 10px;
+}
+
+.back{
+    background-color: black;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    position: fixed;
+    margin: 140px;
+    display: flex;
+    height: 86px;
+    width: 100px;
+
+}
+.up{
+    display: flex;
+    justify-content:flex-start;
+    background-color: transparent;
+    border: 4px;
+
+}
+element.style {
+    display: flex;
+    padding: 30px 20px 5px 16px;}
+
+
+.lists-up{
+    display: flex;
+    padding: 5px 250px 1px 450px;
+}
+
+.principal{
+    width: 1000px;
+    padding: 122px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: serif;
+    display: flex;
+    justify-content: space-around
+    
+}
+
+.principal-paragraph{
+    margin: 50px;
+    display: flex;
+    justify-content:center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 5px solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.item-title{
+    align-items: center;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 6px 35px 15px 37px;
+    border: 10px;
+}
+
+
+.division{
+  display: flex;
+  height: 40px;
+  width: 8000px;
+}
+
+.last{
+
+display: flex;
+  height: 200px;
+  width: 8000px;
+    
+}
+/* grid */
+.medium{
+    display: flex;
+    justify-content: space-around;
+    width: 1fr;
+    height: 1fr;
+    padding: 50px 35px 35px 40px;
+    background-image: url(./multimedia/audio/imagenes/sectionvideos.webp) 
+
+}
+
+
+
+
+.first{
+    height: 250px;
+    
+    width: 500px;
+}
+
+.second{
+    height: 250px;
+    
+    width: 500px;
+}
+
+.third{
+    height: 250px;
+    
+    width: 500px;
+}
+.mid{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+/* seccion albumes recomendados */
+.playlist{
+
+    display: grid;
+    background-image: url(./multimedia/audio/imagenes/sectionalbum.png);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .album-7, .album-8, .album-9{
+    display: grid;
+   
+    height: 300px;
+    width: 90%;
+}
+
+.covers{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.last-text{
+    display: flex;
+    justify-content: flex-end;
+    font-size: medium;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+/* logo de las paginas redirigidas */
+.container-others{
+    display: flex;
+
+}
+.logo-others{
+    margin: 100px;
+    display: flex;
+    height: 70px;
+    width: 70px;
+
+}
+section.lists-up {
+    padding: 0px 15px 90px 700px;
+}
+   
+
+/* seccion bienvenida */
+.item-welcome{
+    background-color: black;
+    background-image: url(./multimedia/audio/imagenes/backstart.jpg);
+   
+
+}
+.item-start-1{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    padding: 24px 150px 45px 70px;
+    border: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.item-paragraphstart{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.item-photostart{
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    justify-content: flex-end;
+}
+.item-woodstock{
+    display: flex;
+    justify-content: center;
+}
+/* seccion clientes*/
+
+.item-clients{
+    background-color: black; 
+    
+
+}
+
+.item-titleclient{
+    font-size: 35px;
+    color: white;
+}
+.item-paragraphsclientsleft{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+  
+}
+.item-paragraphsclients{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 3px solid white;
+}
+
+.item-paragraphsclientsright{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.item-lastclients{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* seccion nosotros */
+.item-us{
+    background-color: black;
+}
+.item-ustitle{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    border: 3px solid red
+}
+.item-paragraphus{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.item-endus{
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 3px solid white;
+}
+.item-endparagraph{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 26px;
+    border: 3px solid white;
+}
+.item-imgus{
+    width: 50%
+    
+}
+
+/* seccion servicios */
+
+.item-servicesback{
+
+background-color: black;
+
+}
+
+.item-servicetitle{
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 1%;
+    border: 2px solid white;
+}
+.item-serviceparagraph{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: flex-start;
+    color: white;
+    padding: 1%;
+    border: 2px solid white;
+}
+
+.item-listservice{
+    align-items: flex-end;
+    font-size: 30px;
+    color: white;
+    font size: 10px;
+}
+
+/* seccion comunidad */
+
+.item-comunity{
+    background-color: black;
+
+}
+
+.item-comunitytitle{
+
+    font-size: 25px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.item-comunityparagraph{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font: 10px;
+
+}
+
+.listcomunity{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+
+/* animaciones */
+.lists-up li{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+
+.Inicio{
+    background-color: cadetblue;
+    transition: all 1.5s linear;
+    
+}
+.Nosotros{
+    background-color: red ;
+    transition: all 1.5s ease-in;
+}
+.Clientes{
+    background-color:blue ;
+    transition: all 1.5s ease;
+}
+.Servicios{
+    background-color:green ;
+    transition: all 1.5s ease-in-out;
+}
+.Comunidad{
+    background-color: violet;
+    transition: all 1.5s ease-out;
+}
+.lists-up:hover .Inicio,
+.lists-up:hover .Nosotros,
+.lists-up:hover .Clientes,
+.lists-up:hover .Servicios,
+.lists-up:hover .Comunidad {
+
+transform: translateX(200px);
+}
