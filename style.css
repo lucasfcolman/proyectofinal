@@ -416,5 +416,6 @@ transform: translateX(200px);
 .row{
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    
 }
