@@ -412,3 +412,9 @@ transform: translateX(200px);
 .animation-img:hover{
     transform: scale(2);
 }
+
+.row{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
