@@ -1,75 +1,99 @@
 *
+
 /* pagina principal */
-html, body{
-    size: 100%;
+html,
+body {
+    background-image: url(/multimedia/audio/imagenes/backall.jpg);
+    min-height: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
 }
 
-.item-upside{
-    padding: 10px;
+.item-upside {
+    margin: 0;
 }
 
-.back{
+.back {
+    max-width: 100%;
     background-color: black;
-    
+
 }
-.container{
-    background-image: url(./multimedia/audio/imagenes/backin.jpg);
+.nav-bar{
+    display: flex;
+    width: 100%;
+}
+.container {
+    padding: 10px 5px 130px 0px;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
-.logo{
-    position: fixed;
-    margin: 140px;
+
+.logo {
+
+    margin: 0;
     display: flex;
     height: 86px;
     width: 100px;
 
 }
-.up{
+
+.up {
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     background-color: transparent;
     border: 4px;
 
 }
-.element-styleg {
-    display: flex;
-    padding: 30px 20px 5px 16px;}
 
-
-.lists-up{
+.element-style {
+    background-color: grey;
+    position: fixed;
+    width: 100%;
     display: flex;
-    padding: 5px 250px 1px 450px;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+    height: 100px;
 }
 
-.principal{
+
+
+.principal {
     width: 1000px;
     padding: 162px;
     text-decoration: none;
     font-size: 23px;
-    color: white;
+    color: black;
     font-family: serif;
     display: flex;
     justify-content: space-around;
 }
 
-.principal-paragraph{
+.principal-paragraph {
+    background-color: black;
     text-align: center;
     margin: 50px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     border: 5px solid white;
 }
-a{
+.covers-bbc{
+    display: flex;
+    justify-content: center;
+}
+a {
     color: white;
     text-decoration: none;
-    
+
 }
 
-.item-title{
+.item-title {
     align-items: center;
     font-size: 45px;
     color: white;
@@ -80,92 +104,108 @@ a{
 }
 
 
-.division{
-  display: flex;
-  height: 40px;
-  width: 8000px;
+.division {
+    display: flex;
+    height: 20px;
+    width: 2000px;
 }
 
-.last{
+.last {
 
-display: flex;
-  height: 200px;
-  width: 8000px;
-    
+    display: flex;
+    height: 200px;
+    width: 8000px;
+
 }
+
 /* grid */
-.medium{
+.medium {
     display: flex;
     justify-content: space-around;
     width: 1fr;
     height: 1fr;
     padding: 50px 35px 35px 40px;
-    background-image: url(./multimedia/audio/imagenes/sectionvideos.webp) 
-
+    background-image: url(./multimedia/audio/imagenes/sectionvideos.webp)
 }
 
 
 
 
-.first{
+.first {
     height: 250px;
-    
+
     width: 500px;
 }
 
-.second{
+.second {
     height: 250px;
-    
+
     width: 500px;
 }
 
-.third{
+.third {
     height: 250px;
-    
+
     width: 500px;
 }
-.medium{
+
+.medium {
     display: grid;
- 
+
 
 }
-.medium-container{
-    display: grid ; 
-    grid-template-columns:repeat(3, 1fr) ;
+
+.medium-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.first, .second, .third{
+.first,
+.second,
+.third {
     border: 10px;
     margin: 30px;
     height: 400px;
     width: 500px;
 }
-.medium-title{
+
+.medium-title {
     margin: 100px;
     background-image: url(./multimedia/audio/imagenes/mid.png);
 }
-.mid{
+
+.mid {
     display: flex;
     justify-content: center;
     color: black;
     border: 2px solid white
 }
+
 /* seccion albumes recomendados */
-.playlist{
+.playlist {
 
     display: grid;
     background-image: url(./multimedia/audio/imagenes/sectionalbum.png);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-.album-1, .album-2, .album-3, .album-4, .album-5, .album-6, .album-7, .album-8, .album-9{
+
+.album-1,
+.album-2,
+.album-3,
+.album-4,
+.album-5,
+.album-6,
+.album-7,
+.album-8,
+.album-9 {
     display: grid;
-   
+
     height: 300px;
     width: 90%;
 }
 
-.covers{ 
+.covers {
     display: flex;
     justify-content: space-between;
 
@@ -174,7 +214,7 @@ display: flex;
     grid-template-rows: repeat(4, 1fr);
 }
 
-.last-text{
+.last-text {
     display: flex;
     justify-content: flex-end;
     font-size: medium;
@@ -184,30 +224,28 @@ display: flex;
 
 
 /* logo de las paginas redirigidas */
-.container-others{
+.container-others {
     display: flex;
 
 }
-.logo-others{
+
+.logo-others {
     margin: 100px;
     display: flex;
     height: 70px;
     width: 70px;
 
 }
+
 section.lists-up {
     padding: 0px 15px 90px 700px;
 }
-   
+
 
 /* seccion bienvenida */
-.item-welcome{
-    background-color: black;
-    background-image: url(./multimedia/audio/imagenes/backstart.jpg);
-   
 
-}
-.item-start-1{
+
+.item-start-1 {
     display: flex;
     justify-content: center;
     color: white;
@@ -218,100 +256,109 @@ section.lists-up {
     height: 20px;
 }
 
-.item-paragraphstart{
+.item-paragraphstart {
     display: flex;
     justify-content: center;
     color: white;
 }
 
-.item-photostart{
+.item-photostart {
     display: flex;
     width: 1000px;
     height: 500px;
     justify-content: flex-end;
 }
-.item-woodstock{
+
+.item-woodstock {
     display: flex;
     justify-content: center;
 }
+
 /* seccion clientes*/
 
-.item-clients{
-    background-color: black; 
-    
+.item-clients {
+    background-color: black;
+
 
 }
 
-.item-titleclient{
+.item-titleclient {
     font-size: 35px;
     color: white;
 }
-.item-paragraphsclientsleft{
+
+.item-paragraphsclientsleft {
     display: flex;
     justify-content: space-between;
     color: white;
-  
+
 }
-.item-paragraphsclients{
+
+.item-paragraphsclients {
     display: flex;
     justify-content: center;
     color: white;
     border: 3px solid white;
 }
 
-.item-paragraphsclientsright{
+.item-paragraphsclientsright {
     display: flex;
     justify-content: space-between;
     color: white;
 }
-.item-lastclients{
+
+.item-lastclients {
     display: flex;
     justify-content: center;
 }
 
 
 /* seccion nosotros */
-.item-us{
+.item-us {
     background-color: black;
 }
-.item-ustitle{
+
+.item-ustitle {
     display: flex;
     justify-content: flex-start;
     color: white;
     border: 3px solid red
 }
-.item-paragraphus{
+
+.item-paragraphus {
     display: flex;
     justify-content: space-between;
     color: white;
 }
-.item-endus{
+
+.item-endus {
     display: flex;
     justify-content: center;
     color: white;
     border: 3px solid white;
 }
-.item-endparagraph{
+
+.item-endparagraph {
     color: white;
     display: flex;
     justify-content: space-between;
     font-size: 26px;
     border: 3px solid white;
 }
-.item-imgus{
+
+.item-imgus {
     width: 50%
-    
 }
 
 /* seccion servicios */
 
-.item-servicesback{
+.item-servicesback {
 
-background-color: black;
+    background-color: black;
 
 }
 
-.item-servicetitle{
+.item-servicetitle {
     font-size: 75px;
     display: flex;
     justify-content: center;
@@ -319,7 +366,8 @@ background-color: black;
     padding: 1%;
     border: 2px solid white;
 }
-.item-serviceparagraph{
+
+.item-serviceparagraph {
     display: flex;
     font-size: 30px;
     color: white;
@@ -329,7 +377,7 @@ background-color: black;
     border: 2px solid white;
 }
 
-.item-listservice{
+.item-listservice {
     align-items: flex-end;
     font-size: 30px;
     color: white;
@@ -338,12 +386,12 @@ background-color: black;
 
 /* seccion comunidad */
 
-.item-comunity{
+.item-comunity {
     background-color: black;
 
 }
 
-.item-comunitytitle{
+.item-comunitytitle {
 
     font-size: 25px;
     color: white;
@@ -351,15 +399,15 @@ background-color: black;
     justify-content: flex-start;
 }
 
-.item-comunityparagraph{
+.item-comunityparagraph {
     display: flex;
     justify-content: flex-start;
-    color: white;
+    color: black;
     font: 10px;
 
 }
 
-.listcomunity{
+.listcomunity {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -368,7 +416,7 @@ background-color: black;
 
 
 /* animaciones */
-.lists-up li{
+.element-style li {
     border-radius: 50%;
     height: 30px;
     width: 30px;
@@ -376,46 +424,53 @@ background-color: black;
 }
 
 
-.Inicio{
+.Inicio {
     background-color: cadetblue;
-    transition: all 1.5s linear;
-    
+    transition: all 0.5s linear;
+
 }
-.Nosotros{
-    background-color: red ;
-    transition: all 1.5s ease-in;
+
+.Nosotros {
+    background-color: cadetblue;
+    transition: all 1s ease-in-out;
 }
-.Clientes{
-    background-color:blue ;
-    transition: all 1.5s ease;
-}
-.Servicios{
-    background-color:green ;
+
+.Clientes {
+    background-color: cadetblue;
     transition: all 1.5s ease-in-out;
 }
-.Comunidad{
-    background-color: violet;
-    transition: all 1.5s ease-out;
-}
-.lists-up:hover .Inicio,
-.lists-up:hover .Nosotros,
-.lists-up:hover .Clientes,
-.lists-up:hover .Servicios,
-.lists-up:hover .Comunidad {
 
-transform: translateX(200px);
+.Servicios {
+    background-color: cadetblue;
+    transition: all 2s ease-in-out;
 }
-.animation-img{
+
+.Comunidad {
+    background-color: cadetblue;
+    transition: all 2.5s ease-in-out;
+}
+
+.element-style:hover .Inicio,
+.element-style:hover .Nosotros,
+.element-style:hover .Clientes,
+.element-style:hover .Servicios,
+.element-style:hover .Comunidad {
+
+    transform: translateX(200px);
+}
+
+.animation-img {
     transition-property: all;
-    transition-duration: 1s; 
+    transition-duration: 1s;
 }
-.animation-img:hover{
+
+.animation-img:hover {
     transform: scale(2);
 }
 
-.row{
+.row {
     color: white;
     display: flex;
     justify-content: flex-start;
-    
+
 }
