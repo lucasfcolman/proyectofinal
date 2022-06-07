@@ -256,12 +256,30 @@ section.lists-up {
     height: 20px;
 }
 
-.item-paragraphstart {
+.item-paragraphtitle {
+    width: 25%;
     display: flex;
-    justify-content: center;
-    color: white;
+    justify-content: flex-start;
+    color: black;
 }
+.item-sectionparagraph{
+    color: black;
+    display: flex;
+    width: 50%;
+}
+.item-paragraphstart{
+    display: flex;
+    width: 50%;
 
+}
+.item-paragraphend{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+.item-poem{
+    width: 50%;
+}
 .item-photostart {
     display: flex;
     width: 1000px;
@@ -270,6 +288,7 @@ section.lists-up {
 }
 
 .item-woodstock {
+    width: 50%;
     display: flex;
     justify-content: center;
 }
@@ -284,27 +303,27 @@ section.lists-up {
 
 .item-titleclient {
     font-size: 35px;
-    color: white;
+    color: black;
 }
 
 .item-paragraphsclientsleft {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: black;
 
 }
 
 .item-paragraphsclients {
     display: flex;
     justify-content: center;
-    color: white;
-    border: 3px solid white;
+    color: black;
+    border: 3px solid black;
 }
 
 .item-paragraphsclientsright {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: black;
 }
 
 .item-lastclients {
