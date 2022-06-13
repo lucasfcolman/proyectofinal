@@ -53,14 +53,18 @@ body {
 }
 
 .element-style {
-    background-color: grey;
-    position: fixed;
+    background-color: transparent;
+    top: 0;
+    position: fixed ;
+    z-index: 10;
     width: 100%;
     display: flex;
     padding: 0px 5px 0px 5px;
     align-items: center;
     height: 100px;
+    
 }
+
 
 
 
@@ -130,7 +134,7 @@ a {
     width: 1fr;
     height: 1fr;
     padding: 50px 35px 35px 40px;
-    background-image: url(./multimedia/audio/imagenes/sectionvideos.webp)
+    background-image: url(/multimedia/audio/imagenes/sectionvideos.webp)
 }
 
 
@@ -211,15 +215,15 @@ a {
 }
 
 .covers {
-    display: flex;
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
     justify-content: space-between;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
 }
 
 .last-text {
+    margin: 10px;
     font-size: 30px;
     display: flex;
     justify-content: center;
@@ -250,14 +254,10 @@ section.lists-up {
 
 .foot-community {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    
 }
 
-.community-txt {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-}
 
 /* seccion bienvenida */
 
@@ -281,39 +281,24 @@ section.lists-up {
 }
 
 .item-sectionparagraph {
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
     color: black;
     display: flex;
-    width: 50%;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
 }
 
-.item-paragraphstart {
-    display: flex;
-    width: 50%;
+.videowelcome{
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-around;
 
 }
 
-.item-paragraphend {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-}
 
-.item-poem {
-    width: 50%;
-}
 
-.item-photostart {
-    display: flex;
-    width: 1000px;
-    height: 500px;
-    justify-content: flex-end;
-}
-
-.item-woodstock {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
 
 /* seccion clientes*/
 
@@ -355,6 +340,8 @@ section.lists-up {
 
 
 /* seccion nosotros */
+
+
 .item-us {
     background-color: black;
 }
@@ -388,21 +375,23 @@ section.lists-up {
     color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    text-align: start;
+    text-align: center;
     font-size: 26px;
-    border: 3px solid white;
+    border: 5px solid white;
 }
 
 .item-imgus {
+    justify-content: end;
     width: 50%
 }
+
 
 /* seccion servicios */
 
 .item-servicesback {
-
-    background-color: black;
-
+background-image: url(/multimedia/audio/imagenes/coversx2160.webp)
+color: black;
+font-weight: bold;
 }
 
 .item-servicetitle {
@@ -468,6 +457,7 @@ section.lists-up {
     height: 30px;
     width: 30px;
     margin: 10px;
+    
 }
 
 
@@ -493,6 +483,7 @@ section.lists-up {
 }
 
 .Comunidad {
+    margin: 100px;
     background-color: cadetblue;
     transition: all 2.5s ease-in-out;
 }
@@ -502,6 +493,7 @@ section.lists-up {
 .element-style:hover .Clientes,
 .element-style:hover .Servicios,
 .element-style:hover .Comunidad {
+
 
     transform: translateX(200px);
 }
@@ -516,17 +508,72 @@ section.lists-up {
 }
 
 .row {
-    color: white;
+    color: black;
     display: flex;
-    justify-content: center;
-    background-color: black;
+    justify-content: flex-start;
+    text-align: justify;
+    font-size:300px ;
 
 }
 
-@media (max-width 600px) {
-    #central {
-        flex-direction: column;
+.email{
+
+    justify-content: flex-end;
+}
+
+/* media querys de index */
+
+@media screen and (max-width: 576px)  { 
+    .element-style, .nav-bar{
+        display: block;
+        background-color: transparent;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        z-index: 10;
         width: 100%;
-        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        
+      }
+      .medium-container, .playlist, .covers{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+      }
+      .principal {
+        position: fixed;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        display: flex;
+        justify-content: flex-start;
+ }
+ .item-paragraphus, .item-endparagraph, .videowelcome  {
+    display: block;
+    justify-content: center;
+ }
+ .item-sectionparagraph{
+    display: inline-block;
+    align-items: center;
+ }
+ }
+
+@media screen and (max-width: 768px) { 
+    .element-style{
+
+        max-width: 100%;
     }
-}
+    .medium-container{
+        display: block;
+        align-items: center;
+        width: 100%;
+      }
+
+
+    }
