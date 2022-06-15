@@ -1,0 +1,124 @@
+/*media*/
+
+@media screen and (max-width: 576px)  { 
+    .element-style, .nav-bar{
+        display: block;
+        background-color: transparent;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        
+      }
+      .medium-container, .playlist, .covers{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+      }
+      .principal {
+        position: fixed;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        display: flex;
+        justify-content: flex-start;
+ }
+ .item-paragraphus, .item-endparagraph, .videowelcome  {
+    display: block;
+    justify-content: center;
+ }
+ .item-sectionparagraph{
+    display: inline-block;
+    align-items: center;
+ }
+ }
+
+@media screen and (max-width: 768px) { 
+    .element-style, .nav-bar{
+        display: block;
+        background-color: transparent;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        
+      }
+      .medium-container, .playlist, .covers{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+      }
+      .principal {
+        position: fixed;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        display: flex;
+        justify-content: flex-start;
+ }
+ .item-paragraphus, .item-endparagraph, .videowelcome  {
+    display: block;
+    justify-content: center;
+ }
+ .item-sectionparagraph{
+    display: inline-block;
+    align-items: center;
+ }
+ }
+
+ @media screen and (max-width: 1060px) {
+    .element-style, .nav-bar{
+        display: block;
+        background-color: transparent;
+        margin: 0;
+        top: 0;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        
+      }
+      .medium-container, .playlist, .covers{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        align-items: center;
+      }
+      .principal {
+        position: fixed;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        display: flex;
+        justify-content: flex-start;
+ }
+ .item-paragraphus, .item-endparagraph, .videowelcome  {
+    display: block;
+    justify-content: center;
+ }
+ .item-sectionparagraph{
+    display: inline-block;
+    align-items: center;
+ }
+ }

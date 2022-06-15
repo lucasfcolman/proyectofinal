@@ -1,0 +1,21 @@
+@import '/scss/base/variablesnextends';
+@import '/scss/base/mixins';
+
+/* seccion servicios */
+
+.item-servicesback {
+ @extend %serviceimg
+    }
+    
+    .item-servicetitle {
+@extend %titleservice
+    }
+    
+    .item-serviceparagraph {
+@extend %serviceparagraph
+
+    }
+    
+    .item-listservice {
+@extend %listservice
+    }

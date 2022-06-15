@@ -1,0 +1,34 @@
+@import '/scss/base/variablesnextends';
+@import '/scss/base/mixins';
+
+/* seccion nosotros */
+
+
+.item-us {
+    background-color: $colors;
+}
+
+.item-ustitle {
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    border: 3px solid red
+}
+
+.item-paragraphus {
+   @extend %paragraphgrid
+}
+
+
+
+.item-endparagraph {
+@extend %endpara
+}
+
+.item-imgus {
+    justify-content: end;
+    width: 50%
+}
+.item-endus {
+    @extend %endus
+    }

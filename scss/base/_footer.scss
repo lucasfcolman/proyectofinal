@@ -1,0 +1,38 @@
+.last {
+
+    display: flex;
+    height: 200px;
+    width: 8000px;
+}
+
+.covers {
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.last-text {
+    margin: 10px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.row {
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    text-align: justify;
+    font-size:300px ;
+
+}
+
+.email{
+
+    justify-content: flex-end;
+}

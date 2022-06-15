@@ -1,0 +1,32 @@
+
+
+@mixin mediusize {
+    height: 250px;
+    width: 500px;
+    border: 10px;
+    margin: 30px;
+    height: 400px;
+    width: 500px;
+}
+
+@mixin animations ($seconds){
+    background-color: cadetblue;
+    transition: $seconds;
+}
+.Inicio {
+   @include  animations (all 0.5s linear);
+
+}
+
+.Nosotros {
+
+    @include  animations (all 1s ease-in-out);
+}
+
+.Clientes {
+    @include animations (all 1.5s ease-in-out);
+}
+
+.Servicios {
+    @include animations (all 2s ease-in-out)
+}

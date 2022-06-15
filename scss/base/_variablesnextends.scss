@@ -1,0 +1,220 @@
+
+$colors:
+cadetblue,
+transparent,
+black;
+
+
+
+
+
+
+
+/*extends*/
+%mediumalbums{
+    display: grid;
+
+    height: 300px;
+    width: 90%;
+}
+%extendbody{
+    background-image: url(/multimedia/audio/imagenes/backall.jpg);
+    min-height: 100vh;
+    height: 100vw;
+    overflow-x: hidden;
+}
+%extendcontainer{
+    padding: 10px 5px 130px 0px;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+%extendlogo{
+    margin: 0;
+    display: flex;
+    height: 86px;
+    width: 100px;
+}
+%upside{
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+    border: 4px;
+}
+%navbar{
+    background-color: transparent;
+    top: 0;
+    position: fixed ;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    align-items: center;
+    height: 100px;
+}
+%principalnav{
+    width: 1000px;
+    padding: 162px;
+    text-decoration: none;
+    font-size: 23px;
+    color: $colors;
+    font-family: serif;
+    display: flex;
+    justify-content: space-around;
+}
+%principalnavparagraph{
+    background-color: $colors;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border: 5px solid white;
+}
+%midtitle{
+    align-items: center;
+    font-size: 45px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 6px 35px 15px 37px;
+    border: 10px;
+}
+%flexmid{
+    display: flex;
+    justify-content: space-around;
+    width: 1fr;
+    height: 1fr;
+    padding: 50px 35px 35px 40px;
+    background-image: url(/multimedia/audio/imagenes/sectionvideos.webp)
+}
+%midplay{
+    display: flex;
+    justify-content: center;
+    color: black;
+    border: 2px solid white
+}
+%playlist{
+    display: grid;
+    background-image: url(/multimedia/audio/imagenes/sectionalbum.png);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*welcome section*/
+
+
+%wlcsection{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    padding: 24px 150px 45px 70px;
+    border: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+%paragraphwelcome{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+}
+%paragraphsection{
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+    color: black;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+%videowelcome{
+    background-image: url(/multimedia/audio/imagenes/sectionvideos.webp);
+    color: rgb(245, 228, 0) ;
+    display:flex;
+    justify-content: space-around;
+}
+
+/*clients section*/
+
+%clientsflexbox{
+    display: flex;
+    justify-content: center;
+}
+
+/*us section*/
+%paragraphgrid{
+    margin: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3 2fr);
+
+    color: black;
+    font-size: 20px;
+}
+
+%endus {
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: 3px solid white;
+}
+
+%endpara{
+    margin: 70px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    font-size: 26px;
+    border: 5px solid white;
+}
+
+/*service section*/
+%serviceimg {
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+    color: black;
+    font-weight: bold;
+    }
+    
+%titleservice {
+        font-size: 75px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 1%;
+        border: 2px solid white;
+    }
+    
+    %serviceparagraph{
+        display: flex;
+        font-size: 30px;
+        color: white;
+        justify-content: flex-start;
+        color: white;
+        padding: 1%;
+        border: 2px solid white;
+    }
+    
+    %listservice {
+        align-items: flex-end;
+        font-size: 30px;
+        color: white;
+        font-size: 10px;
+    }
+
+    /*animations*/
+
+    %animations{
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        margin: 10px;
+    }

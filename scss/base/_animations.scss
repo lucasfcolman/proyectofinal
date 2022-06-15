@@ -1,0 +1,55 @@
+@import '/scss/base/variablesnextends';
+@import '/scss/base/mixins';
+
+/* animaciones */
+.element-style li {
+@extend %animations
+    
+}
+
+
+.Inicio {
+    background-color: cadetblue;
+    transition: all 0.5s linear;
+
+}
+
+.Nosotros {
+    background-color: cadetblue;
+    transition: all 1s ease-in-out;
+}
+
+.Clientes {
+    background-color: cadetblue;
+    transition: all 1.5s ease-in-out;
+}
+
+.Servicios {
+    background-color: cadetblue;
+    transition: all 2s ease-in-out;
+}
+
+.Comunidad {
+    margin: 100px;
+    background-color: cadetblue;
+    transition: all 2.5s ease-in-out;
+}
+
+.element-style:hover .Inicio,
+.element-style:hover .Nosotros,
+.element-style:hover .Clientes,
+.element-style:hover .Servicios,
+.element-style:hover .Comunidad {
+
+
+    transform: translateX(200px);
+}
+
+.animation-img {
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.animation-img:hover {
+    transform: scale(2);
+}

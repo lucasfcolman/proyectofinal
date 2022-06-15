@@ -1,0 +1,22 @@
+/* seccion bienvenida */
+@import '/scss/base/variablesnextends';
+@import '/scss/base/mixins';
+
+
+.item-start-1 {
+@extend %wlcsection
+}
+
+.item-paragraphtitle {
+@extend %paragraphwelcome
+}
+
+.item-sectionparagraph {
+@extend %paragraphsection 
+}
+
+.videowelcome{
+@extend %videowelcome
+
+}
+
