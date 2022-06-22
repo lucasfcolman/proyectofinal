@@ -62,21 +62,23 @@ body {
   padding: 162px;
   text-decoration: none;
   font-size: 23px;
-  color: cadetblue, transparent, black;
+  color: black;
   font-family: serif;
   display: flex;
   justify-content: space-around;
 }
 
 .principal-paragraph {
-  background-color: cadetblue, transparent, black;
   text-align: center;
   margin: 50px;
   display: flex;
   justify-content: center;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
   color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
   border: 5px solid white;
 }
 
@@ -90,9 +92,16 @@ body {
   border: 10px;
 }
 
+.first, .second, .third {
+  border: 10px;
+  margin: 30px;
+  height: 400px;
+  width: 500px;
+}
+
 .medium {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   width: 1fr;
   height: 1fr;
   padding: 50px 35px 35px 40px;
@@ -114,10 +123,118 @@ body {
 }
 
 /*welcome section*/
+.item-start-1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  padding: 24px 150px 45px 70px;
+  border: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.item-paragraphtitle {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+}
+
+.item-sectionparagraph {
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.videowelcome {
+  background-image: url(/multimedia/audio/imagenes/sectionvideos.webp);
+  color: rgb(245, 228, 0);
+  display: flex;
+  justify-content: space-around;
+}
+
 /*clients section*/
+.item-lastclients, .item-paragraphsclients, .item-paragraphsclientsleft {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*us section*/
+.item-paragraphus {
+  margin: 70px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3 2fr);
+  width: 100%;
+  max-width: 100%;
+  color: black;
+  font-size: 20px;
+}
+
+.item-endus {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  color: white;
+  border: 3px solid white;
+}
+
+.item-endparagraph {
+  margin: 70px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  font-size: 26px;
+  border: 5px solid white;
+}
+
 /*service section*/
+.item-servicesback {
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+  color: black;
+  font-weight: bold;
+}
+
+.item-servicetitle {
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+}
+
+.item-serviceparagraph {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  justify-content: flex-start;
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+}
+
+.item-listservice {
+  align-items: flex-end;
+  font-size: 30px;
+  color: white;
+  font-size: 10px;
+}
+
 /*animations*/
+.element-style li {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
 .Inicio {
   background-color: cadetblue;
   transition: all 0.5s linear;
@@ -136,6 +253,50 @@ body {
 .Servicios {
   background-color: cadetblue;
   transition: all 2s ease-in-out;
+}
+
+/* animaciones */
+.Inicio {
+  background-color: cadetblue;
+  transition: all 0.5s linear;
+}
+
+.Nosotros {
+  background-color: cadetblue;
+  transition: all 1s linear;
+}
+
+.Clientes {
+  background-color: cadetblue;
+  transition: all 1.5s linear;
+}
+
+.Servicios {
+  background-color: cadetblue;
+  transition: all 2s linear;
+}
+
+.Comunidad {
+  margin: 100px;
+  background-color: cadetblue;
+  transition: all 2.5s linear;
+}
+
+.element-style:hover .Inicio,
+.element-style:hover .Nosotros,
+.element-style:hover .Clientes,
+.element-style:hover .Servicios,
+.element-style:hover .Comunidad {
+  transform: translateX(200px);
+}
+
+.animation-img {
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.animation-img:hover {
+  transform: scale(2);
 }
 
 /*navbar y parrafo header*/
@@ -169,18 +330,15 @@ a {
 }
 
 /*medium*/
-.fist, .second, .third {
-  height: 250px;
-  width: 500px;
-  border: 10px;
-  margin: 30px;
-  height: 400px;
-  width: 500px;
-}
-
 .medium-title {
   margin: 100px;
   background-image: url(/multimedia/audio/imagenes/mid.png);
+}
+
+.medium-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* seccion albumes recomendados */
@@ -268,21 +426,23 @@ body {
   padding: 162px;
   text-decoration: none;
   font-size: 23px;
-  color: cadetblue, transparent, black;
+  color: black;
   font-family: serif;
   display: flex;
   justify-content: space-around;
 }
 
 .principal-paragraph {
-  background-color: cadetblue, transparent, black;
   text-align: center;
   margin: 50px;
   display: flex;
   justify-content: center;
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
   color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bolder;
   border: 5px solid white;
 }
 
@@ -296,9 +456,16 @@ body {
   border: 10px;
 }
 
+.first, .second, .third {
+  border: 10px;
+  margin: 30px;
+  height: 400px;
+  width: 500px;
+}
+
 .medium {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   width: 1fr;
   height: 1fr;
   padding: 50px 35px 35px 40px;
@@ -320,9 +487,373 @@ body {
 }
 
 /*welcome section*/
+.item-start-1 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  padding: 24px 150px 45px 70px;
+  border: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.item-paragraphtitle {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  color: black;
+}
+
+.item-sectionparagraph {
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+  color: black;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  width: 100%;
+}
+
+.videowelcome {
+  background-image: url(/multimedia/audio/imagenes/sectionvideos.webp);
+  color: rgb(245, 228, 0);
+  display: flex;
+  justify-content: space-around;
+}
+
 /*clients section*/
+.item-lastclients, .item-paragraphsclients, .item-paragraphsclientsleft {
+  display: flex;
+  justify-content: space-around;
+}
+
 /*us section*/
+.item-paragraphus {
+  margin: 70px;
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: repeat(3 2fr);
+  width: 100%;
+  max-width: 100%;
+  color: black;
+  font-size: 20px;
+}
+
+.item-endus {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  color: white;
+  border: 3px solid white;
+}
+
+.item-endparagraph {
+  margin: 70px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  font-size: 26px;
+  border: 5px solid white;
+}
+
 /*service section*/
+.item-servicesback {
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+  color: black;
+  font-weight: bold;
+}
+
+.item-servicetitle {
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+}
+
+.item-serviceparagraph {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  justify-content: flex-start;
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+}
+
+.item-listservice {
+  align-items: flex-end;
+  font-size: 30px;
+  color: white;
+  font-size: 10px;
+}
+
 /*animations*/
+.element-style li {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+
+/*media*/
+@media screen and (max-width: 400px) {
+  .element-style, .nav-bar {
+    display: block;
+    background-color: transparent;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .medium-container, .playlist, .covers {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .first, .second, .third {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .principal {
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    width: 10%;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: serif;
+    display: block;
+  }
+  .item-paragraphus, .item-endparagraph, .videowelcome {
+    display: block;
+    justify-content: center;
+  }
+  .item-sectionparagraph {
+    display: inline-block;
+    align-items: center;
+  }
+  .covers {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .item-us .item-videous {
+    display: block;
+    max-width: 80%;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .element-style, .nav-bar {
+    display: block;
+    background-color: transparent;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .medium-container, .playlist, .covers {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .first, .second, .third {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .principal {
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: serif;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .item-paragraphus, .item-endparagraph, .videowelcome {
+    display: block;
+    justify-content: center;
+  }
+  .item-sectionparagraph {
+    display: inline-block;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .element-style, .nav-bar {
+    display: block;
+    background-color: transparent;
+    margin: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .medium-container, .playlist, .covers {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+  }
+  .principal {
+    position: fixed;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: serif;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .item-paragraphus, .item-endparagraph, .videowelcome {
+    display: block;
+    justify-content: center;
+  }
+  .item-sectionparagraph {
+    display: inline-block;
+    align-items: center;
+  }
+}
+/* animaciones */
+.Inicio {
+  background-color: cadetblue;
+  transition: all 0.5s linear;
+}
+
+.Nosotros {
+  background-color: cadetblue;
+  transition: all 1s linear;
+}
+
+.Clientes {
+  background-color: cadetblue;
+  transition: all 1.5s linear;
+}
+
+.Servicios {
+  background-color: cadetblue;
+  transition: all 2s linear;
+}
+
+.Comunidad {
+  margin: 100px;
+  background-color: cadetblue;
+  transition: all 2.5s linear;
+}
+
+.element-style:hover .Inicio,
+.element-style:hover .Nosotros,
+.element-style:hover .Clientes,
+.element-style:hover .Servicios,
+.element-style:hover .Comunidad {
+  transform: translateX(200px);
+}
+
+.animation-img {
+  transition-property: all;
+  transition-duration: 1s;
+}
+
+.animation-img:hover {
+  transform: scale(2);
+}
+
+.last {
+  display: flex;
+  height: 200px;
+  width: 8000px;
+}
+
+.footerimg {
+  background-image: url(/multimedia/audio/imagenes/socialmediafooter.jpg);
+}
+
+.covers {
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.last-text {
+  margin: 10px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  font-size: medium;
+  font-weight: bolder;
+  color: yellow;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.row {
+  color: black;
+  display: flex;
+  justify-content: flex-start;
+  text-align: justify;
+  font-size: 300px;
+}
+
+.email {
+  justify-content: flex-end;
+}
+
+/* seccion bienvenida */
+/* seccion nosotros */
+.item-us {
+  overflow-x: hidden;
+}
+
+.item-ustitle {
+  display: flex;
+  justify-content: flex-start;
+  color: white;
+  border: 3px solid red;
+}
+
+.item-videous {
+  width: 100%;
+  max-width: 100%;
+}
+
+.item-imgus {
+  justify-content: end;
+  width: 50%;
+}
+
+/* seccion servicios */
+/* seccion clientes*/
+.item-titleclient {
+  font-size: 35px;
+}
+
+.item-paragraphsclientsright {
+  display: flex;
+  justify-content: space-around;
+  color: yellow;
+  font-weight: bold;
+  background-color: cadetblue;
+  background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+}
 
 /*# sourceMappingURL=style.css.map */

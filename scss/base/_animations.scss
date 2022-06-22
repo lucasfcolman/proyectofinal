@@ -1,5 +1,4 @@
-@import '/scss/base/variablesnextends';
-@import '/scss/base/mixins';
+
 
 /* animaciones */
 .element-style li {
@@ -16,23 +15,23 @@
 
 .Nosotros {
     background-color: cadetblue;
-    transition: all 1s ease-in-out;
+    transition: all 1s linear;
 }
 
 .Clientes {
     background-color: cadetblue;
-    transition: all 1.5s ease-in-out;
+    transition: all 1.5s linear;
 }
 
 .Servicios {
     background-color: cadetblue;
-    transition: all 2s ease-in-out;
+    transition: all 2s linear;
 }
 
 .Comunidad {
     margin: 100px;
     background-color: cadetblue;
-    transition: all 2.5s ease-in-out;
+    transition: all 2.5s linear;
 }
 
 .element-style:hover .Inicio,

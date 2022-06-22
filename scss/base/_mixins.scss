@@ -1,13 +1,6 @@
 
 
-@mixin mediusize {
-    height: 250px;
-    width: 500px;
-    border: 10px;
-    margin: 30px;
-    height: 400px;
-    width: 500px;
-}
+
 
 @mixin animations ($seconds){
     background-color: cadetblue;

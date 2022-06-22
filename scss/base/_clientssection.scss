@@ -1,37 +1,43 @@
-@import '/scss/base/variablesnextends';
-@import '/scss/base/mixins';
+
+
 
 /* seccion clientes*/
 
 .item-clients {
-    background-color: $colors;
+    
 
 
 }
 
 .item-titleclient {
     font-size: 35px;
-    color: $colors;
+    
 }
 
 .item-paragraphsclientsleft {
     @extend %clientsflexbox
-    color: $colors;
+    
 
 }
 
 .item-paragraphsclients {
     @extend %clientsflexbox
-    color: $colors;
-    border: 3px solid black;
+
 }
 
 .item-paragraphsclientsright {
     display: flex;
-    justify-content: space-between;
-    color: $colors;
+    justify-content: space-around;
+    color: yellow;
+    font-weight: bold;
+    background-color: cadetblue;
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
+    
 }
 
 .item-lastclients {
 @extend %clientsflexbox
+}
+.item-photostart{
+    @extend %footclients
 }

@@ -1,5 +1,6 @@
 @import './variablesnextends';
 @import './mixins';
+@import './animations';
 /*navbar y parrafo header*/
 html,
 body {
@@ -75,8 +76,8 @@ a {
     @extend %midtitle
     }
 
-.fist, .second, .third{
-@include mediusize;
+.first, .second, .third{
+@extend %mediusize
 }
 
 .medium {
@@ -86,6 +87,12 @@ a {
     margin: 100px;
     background-image: url(/multimedia/audio/imagenes/mid.png);
 }
+.medium-container{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+}
+
 
 .mid {
 @extend %midplay

@@ -1,11 +1,11 @@
-@import '/scss/base/variablesnextends';
-@import '/scss/base/mixins';
+
 
 /* seccion nosotros */
 
 
 .item-us {
-    background-color: $colors;
+    overflow-x: hidden;
+  
 }
 
 .item-ustitle {
@@ -19,7 +19,10 @@
    @extend %paragraphgrid
 }
 
-
+.item-videous{
+   width: 100%;
+   max-width: 100%;
+}
 
 .item-endparagraph {
 @extend %endpara

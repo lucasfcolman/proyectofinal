@@ -1,9 +1,4 @@
 
-$colors:
-cadetblue,
-transparent,
-black;
-
 
 
 
@@ -60,20 +55,23 @@ black;
     padding: 162px;
     text-decoration: none;
     font-size: 23px;
-    color: $colors;
+    color: black;
     font-family: serif;
     display: flex;
     justify-content: space-around;
 }
 %principalnavparagraph{
-    background-color: $colors;
+    
     text-align: center;
     margin: 50px;
     display: flex;
     justify-content: center;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
     color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
     border: 5px solid white;
 }
 %midtitle{
@@ -85,9 +83,15 @@ black;
     padding: 6px 35px 15px 37px;
     border: 10px;
 }
+%mediusize{
+    border: 10px;
+    margin: 30px;
+    height: 400px;
+    width: 500px;
+}
 %flexmid{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     width: 1fr;
     height: 1fr;
     padding: 50px 35px 35px 40px;
@@ -146,16 +150,22 @@ black;
 
 %clientsflexbox{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+%footclients{
+
+
 }
 
 /*us section*/
 %paragraphgrid{
     margin: 70px;
     display: grid;
+    grid-column-gap: 50px;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(3 2fr);
-
+    width: 100%;
+    max-width: 100%;
     color: black;
     font-size: 20px;
 }
@@ -163,6 +173,7 @@ black;
 %endus {
     display: flex;
     justify-content: center;
+    max-width: 100%;
     color: white;
     border: 3px solid white;
 }
