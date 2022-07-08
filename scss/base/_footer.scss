@@ -11,8 +11,8 @@
 .covers {
     background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
     justify-content: space-between;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    
 }
 
 .last-text {

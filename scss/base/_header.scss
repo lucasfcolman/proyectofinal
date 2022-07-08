@@ -15,10 +15,7 @@ body {
     max-width: 100%;
 }
 
-.nav-bar {
-    display: flex;
-    width: 100%;
-}
+
 
 .container {
     @extend %extendcontainer
@@ -38,10 +35,18 @@ body {
 .element-style {
 
 @extend %navbar
+
+}
+.element-style li{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 55px;    
 }
 
-
-
+section{
+    padding: 1px;
+}
 
 .principal {
 @extend %principalnav
@@ -54,6 +59,7 @@ body {
 .covers-bbc {
     display: flex;
     justify-content: center;
+    color: yellow;
 }
 
 a {
@@ -84,7 +90,7 @@ a {
 @extend %flexmid
 }
 .medium-title {
-    margin: 100px;
+    margin: 0;
     background-image: url(/multimedia/audio/imagenes/mid.png);
 }
 .medium-container{

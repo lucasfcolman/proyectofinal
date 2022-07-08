@@ -16,26 +16,26 @@
 html,
 body {
   background-image: url(/multimedia/audio/imagenes/backall.jpg);
-  min-height: 100vh;
+  min-height: 70vh;
   height: 100vw;
   overflow-x: hidden;
 }
 
 .container {
-  padding: 10px 5px 130px 0px;
   margin: 0;
-  max-width: 100%;
-  width: 100%;
+  max-width: 80%;
+  width: 30px;
+  position: fixed;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logo {
   margin: 0;
   display: flex;
-  height: 86px;
-  width: 100px;
+  height: 56px;
+  width: 50px;
 }
 
 .up {
@@ -48,32 +48,30 @@ body {
 .element-style {
   background-color: transparent;
   top: 0;
-  position: fixed;
   z-index: 10;
-  width: 100%;
+  width: 50%;
   display: flex;
-  padding: 0px 5px 0px 5px;
-  align-items: center;
-  height: 100px;
+  height: 50px;
+  justify-content: flex-start;
 }
 
 .principal {
-  width: 1000px;
-  padding: 162px;
-  text-decoration: none;
-  font-size: 23px;
+  max-width: 100%;
+  width: 10px;
+  list-style: none;
+  font-size: 15px;
   color: black;
   font-family: serif;
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 3px;
 }
 
 .principal-paragraph {
   text-align: center;
-  margin: 50px;
+  margin-top: 150px;
   display: flex;
-  justify-content: center;
-  font-size: 15px;
+  justify-content: space-around;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
@@ -148,6 +146,7 @@ body {
   align-items: center;
   font-weight: bold;
   width: 100%;
+  margin-top: 100px;
 }
 
 .videowelcome {
@@ -165,7 +164,7 @@ body {
 
 /*us section*/
 .item-paragraphus {
-  margin: 70px;
+  margin: 50px;
   display: grid;
   grid-column-gap: 50px;
   grid-template-columns: repeat(3, 2fr);
@@ -173,7 +172,7 @@ body {
   width: 100%;
   max-width: 100%;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .item-endus {
@@ -202,7 +201,7 @@ body {
 }
 
 .item-servicetitle {
-  font-size: 75px;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   color: white;
@@ -212,27 +211,29 @@ body {
 
 .item-serviceparagraph {
   display: flex;
-  font-size: 30px;
-  color: white;
+  font-size: 40px;
   justify-content: flex-start;
-  color: white;
-  padding: 1%;
-  border: 2px solid white;
+  color: yellow;
+  font-weight: bolder;
+  padding-top: 155px;
 }
 
 .item-listservice {
   align-items: flex-end;
-  font-size: 30px;
-  color: white;
-  font-size: 10px;
+  font-size: 40px;
+  color: yellow;
 }
 
 /*animations*/
 .element-style li {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  margin: 10px;
+  border-radius: 15px;
+  height: 25px;
+  width: 100%;
+  margin: 45px;
+  color: yellow;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
 }
 
 .Inicio {
@@ -256,43 +257,19 @@ body {
 }
 
 /* animaciones */
-.Inicio {
-  background-color: cadetblue;
-  transition: all 0.5s linear;
-}
-
-.Nosotros {
-  background-color: cadetblue;
-  transition: all 1s linear;
-}
-
-.Clientes {
-  background-color: cadetblue;
-  transition: all 1.5s linear;
-}
-
-.Servicios {
-  background-color: cadetblue;
-  transition: all 2s linear;
-}
-
-.Comunidad {
-  margin: 100px;
-  background-color: cadetblue;
-  transition: all 2.5s linear;
-}
-
-.element-style:hover .Inicio,
-.element-style:hover .Nosotros,
-.element-style:hover .Clientes,
-.element-style:hover .Servicios,
-.element-style:hover .Comunidad {
-  transform: translateX(200px);
+.Inicio:hover,
+.Nosotros:hover,
+.Clientes:hover,
+.Servicios:hover,
+.Comunidad:hover {
+  background-color: yellow;
+  transition: 0.5s;
+  transform: scale(1.5);
 }
 
 .animation-img {
   transition-property: all;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .animation-img:hover {
@@ -308,14 +285,21 @@ body {
   max-width: 100%;
 }
 
-.nav-bar {
+.element-style li {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  padding-left: 35px;
+  padding-right: 55px;
+}
+
+section {
+  padding: 1px;
 }
 
 .covers-bbc {
   display: flex;
   justify-content: center;
+  color: yellow;
 }
 
 a {
@@ -331,7 +315,7 @@ a {
 
 /*medium*/
 .medium-title {
-  margin: 100px;
+  margin: 0;
   background-image: url(/multimedia/audio/imagenes/mid.png);
 }
 
@@ -380,26 +364,26 @@ a {
 html,
 body {
   background-image: url(/multimedia/audio/imagenes/backall.jpg);
-  min-height: 100vh;
+  min-height: 70vh;
   height: 100vw;
   overflow-x: hidden;
 }
 
 .container {
-  padding: 10px 5px 130px 0px;
   margin: 0;
-  max-width: 100%;
-  width: 100%;
+  max-width: 80%;
+  width: 30px;
+  position: fixed;
   box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .logo {
   margin: 0;
   display: flex;
-  height: 86px;
-  width: 100px;
+  height: 56px;
+  width: 50px;
 }
 
 .up {
@@ -412,32 +396,30 @@ body {
 .element-style {
   background-color: transparent;
   top: 0;
-  position: fixed;
   z-index: 10;
-  width: 100%;
+  width: 50%;
   display: flex;
-  padding: 0px 5px 0px 5px;
-  align-items: center;
-  height: 100px;
+  height: 50px;
+  justify-content: flex-start;
 }
 
 .principal {
-  width: 1000px;
-  padding: 162px;
-  text-decoration: none;
-  font-size: 23px;
+  max-width: 100%;
+  width: 10px;
+  list-style: none;
+  font-size: 15px;
   color: black;
   font-family: serif;
   display: flex;
-  justify-content: space-around;
+  margin-bottom: 3px;
 }
 
 .principal-paragraph {
   text-align: center;
-  margin: 50px;
+  margin-top: 150px;
   display: flex;
-  justify-content: center;
-  font-size: 15px;
+  justify-content: space-around;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
@@ -512,6 +494,7 @@ body {
   align-items: center;
   font-weight: bold;
   width: 100%;
+  margin-top: 100px;
 }
 
 .videowelcome {
@@ -529,7 +512,7 @@ body {
 
 /*us section*/
 .item-paragraphus {
-  margin: 70px;
+  margin: 50px;
   display: grid;
   grid-column-gap: 50px;
   grid-template-columns: repeat(3, 2fr);
@@ -537,7 +520,7 @@ body {
   width: 100%;
   max-width: 100%;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .item-endus {
@@ -566,7 +549,7 @@ body {
 }
 
 .item-servicetitle {
-  font-size: 75px;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   color: white;
@@ -576,74 +559,90 @@ body {
 
 .item-serviceparagraph {
   display: flex;
-  font-size: 30px;
-  color: white;
+  font-size: 40px;
   justify-content: flex-start;
-  color: white;
-  padding: 1%;
-  border: 2px solid white;
+  color: yellow;
+  font-weight: bolder;
+  padding-top: 155px;
 }
 
 .item-listservice {
   align-items: flex-end;
-  font-size: 30px;
-  color: white;
-  font-size: 10px;
+  font-size: 40px;
+  color: yellow;
 }
 
 /*animations*/
 .element-style li {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  margin: 10px;
+  border-radius: 15px;
+  height: 25px;
+  width: 100%;
+  margin: 45px;
+  color: yellow;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
 }
 
 /*media*/
-@media screen and (max-width: 400px) {
-  .element-style, .nav-bar {
-    display: block;
-    background-color: transparent;
-    margin: 0;
-    top: 0;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+@media screen and (max-width: 422px) {
+  .principal {
+    flex-direction: column;
+    text-align: center;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
   }
-  .medium-container, .playlist, .covers {
-    display: block;
+  .principal-paragraph {
+    margin-top: 220px;
+  }
+  .item-paragraphus {
+    padding-top: 270px;
+  }
+  .item-videous {
+    max-width: 25%;
+    width: 125px;
+    height: 250px;
+  }
+  .item-paragraphclients {
+    padding-top: 220px;
+    font-size: 12px;
     width: 100%;
     max-width: 100%;
-    align-items: center;
   }
-  .first, .second, .third {
-    width: 100%;
-    height: 100%;
+  .item-lastclients {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .covers, .animation-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 518px) {
+  .logo {
+    display: none;
+  }
+  .element-style {
+    margin-right: 160px;
   }
   .principal {
-    position: fixed;
-    padding: 10px 10px 10px 10px;
-    width: 10%;
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    font-family: serif;
-    display: block;
+    font-size: 1px;
   }
-  .item-paragraphus, .item-endparagraph, .videowelcome {
-    display: block;
-    justify-content: center;
+  .item-paragraphus {
+    padding-top: 255px;
   }
-  .item-sectionparagraph {
-    display: inline-block;
-    align-items: center;
-  }
-  .covers {
-    display: none;
+  .covers, .animation-img {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 576px) {
@@ -653,29 +652,72 @@ body {
     align-items: center;
     overflow-x: hidden;
   }
-  .element-style, .nav-bar {
-    display: block;
-    background-color: transparent;
-    margin: 0;
-    top: 0;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+  .element-style {
     display: flex;
-    justify-content: flex-start;
+    z-index: 10;
   }
-  .medium-container, .playlist, .covers {
+  li {
+    font-size: 10px;
+    display: flex;
+  }
+  .principal {
+    font-size: 1px;
+  }
+  .medium-container,
+.playlist,
+.covers {
     display: block;
     width: 100%;
     max-width: 100%;
     align-items: center;
   }
-  .first, .second, .third {
+  .first,
+.second,
+.third {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
   }
+  .item-paragraphus,
+.item-endparagraph,
+.videowelcome {
+    display: block;
+    justify-content: center;
+  }
+  .item-sectionparagraph {
+    display: inline-block;
+    align-items: center;
+  }
+  .item-paragraphus {
+    padding-top: 225px;
+  }
+  .covers, .animation-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .item-listservice {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .medium-container,
+.covers {
+    display: block;
+    width: 70%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .medium {
+    width: 100%;
+    max-width: 100%;
+  }
+  .playlist {
+    max-width: 100%;
+    width: 100%;
+  }
   .principal {
     position: fixed;
     padding: 10px 10px 10px 10px;
@@ -687,33 +729,102 @@ body {
     display: flex;
     justify-content: flex-start;
   }
-  .item-paragraphus, .item-endparagraph, .videowelcome {
+  .videowelcome {
     display: block;
     justify-content: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .item-paragraphus {
+    max-width: 100%;
+    width: 75%;
+    padding-top: 215px;
+  }
+  .item-endparagraph {
+    max-width: 100%;
+    width: 70%;
   }
   .item-sectionparagraph {
     display: inline-block;
     align-items: center;
   }
-}
-@media screen and (max-width: 768px) {
-  .element-style, .nav-bar {
-    display: block;
-    background-color: transparent;
-    margin: 0;
-    top: 0;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+  .item-listservice {
+    font-size: 50px;
   }
-  .medium-container, .playlist, .covers {
+  .covers {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .item-us .item-videous {
+    display: block;
+    max-width: 100%;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .element-style li {
+    display: flex;
+    margin: 0;
+    z-index: 10;
+    width: 1px;
+    padding: 10px 85px 20px 1px;
+  }
+  .medium-container,
+.playlist,
+.covers {
     display: block;
     width: 100%;
     max-width: 100%;
     align-items: center;
   }
+  .first,
+.second,
+.third {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .item-paragraphus,
+.item-endparagraph,
+.videowelcome {
+    display: block;
+    justify-content: center;
+  }
+  .item-sectionparagraph {
+    display: inline-block;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1220x) {
+  .medium-container,
+.covers {
+    display: block;
+    width: 70%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .medium {
+    width: 100%;
+    max-width: 100%;
+  }
+  .playlist {
+    max-width: 100%;
+    width: 100%;
+  }
+  .divgrid-1,
+.divgrid-2,
+.divgrid-3,
+.divgrid-4,
+.divgrid-5,
+.divgrid-6,
+.divgrid-7,
+.divgrid-8,
+.divgrid-9 {
+    display: flex;
+    justify-content: center;
+  }
   .principal {
     position: fixed;
     padding: 10px 10px 10px 10px;
@@ -725,53 +836,43 @@ body {
     display: flex;
     justify-content: flex-start;
   }
-  .item-paragraphus, .item-endparagraph, .videowelcome {
+  .videowelcome {
     display: block;
     justify-content: center;
+    max-width: 100%;
+    width: 100%;
+  }
+  .item-paragraphus {
+    max-width: 100%;
+    width: 75%;
+  }
+  .item-endparagraph {
+    max-width: 100%;
+    width: 70%;
   }
   .item-sectionparagraph {
     display: inline-block;
     align-items: center;
   }
+  .covers {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /* animaciones */
-.Inicio {
-  background-color: cadetblue;
-  transition: all 0.5s linear;
-}
-
-.Nosotros {
-  background-color: cadetblue;
-  transition: all 1s linear;
-}
-
-.Clientes {
-  background-color: cadetblue;
-  transition: all 1.5s linear;
-}
-
-.Servicios {
-  background-color: cadetblue;
-  transition: all 2s linear;
-}
-
-.Comunidad {
-  margin: 100px;
-  background-color: cadetblue;
-  transition: all 2.5s linear;
-}
-
-.element-style:hover .Inicio,
-.element-style:hover .Nosotros,
-.element-style:hover .Clientes,
-.element-style:hover .Servicios,
-.element-style:hover .Comunidad {
-  transform: translateX(200px);
+.Inicio:hover,
+.Nosotros:hover,
+.Clientes:hover,
+.Servicios:hover,
+.Comunidad:hover {
+  background-color: yellow;
+  transition: 0.5s;
+  transform: scale(1.5);
 }
 
 .animation-img {
   transition-property: all;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .animation-img:hover {
@@ -791,8 +892,7 @@ body {
 .covers {
   background-image: url(/multimedia/audio/imagenes/coversx2160.webp);
   justify-content: space-between;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
 }
 
 .last-text {
